@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
             Vector3 camForward = m_CameraTransform.forward;
             Vector3 newRot = new Vector3(Mathf.Cos(angleToRotCam) * camForward.x - Mathf.Sin(angleToRotCam) * camForward.z, 0,
                 Mathf.Cos(angleToRotCam) * camForward.z + Mathf.Sin(angleToRotCam) * camForward.x);
-            float theta = Vector3.SignedAngle(m_CameraTransform.forward, newRot, Vector3.up);
+            float theta = Vector3.SignedAngle(transform.forward, newRot, Vector3.up);
             cc_Rb.rotation = Quaternion.Slerp(cc_Rb.rotation, cc_Rb.rotation * Quaternion.Euler(0, theta, 0), 0.2f);
         }
     }
