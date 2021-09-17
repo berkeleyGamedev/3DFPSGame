@@ -4885,12 +4885,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2758f9310948a4d46a7e625deaea630f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxHealth: 1
+  m_MaxHealth: 2
   m_Speed: 1
-  m_Damage: 0.1
+  m_Damage: 0.05
   m_DeathExplosion: {fileID: 1751476858793735223, guid: 5f7cbf55f3468d34f8f469877a079fbb,
     type: 3}
   m_PowerPillDropRate: 1
   m_PowerPill: {fileID: 2778866105261097363, guid: 6cf339c860eed4b0691ebf64ddb20f8a,
     type: 3}
-  m_Score: 1
+  m_Score: 3
