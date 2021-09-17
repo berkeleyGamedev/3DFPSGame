@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
         {
             right = 0;
         }
-        Debug.Log(forward);
+        
         p_Velocity.Set(right, forward);
     }
 
@@ -230,6 +230,11 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("HealthPill"))
         {
             IncreaseHealth(other.GetComponent<HealthPill>().HealthGain);
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("PowerPill"))
+        {
+            m_Speed += other.GetComponent<PowerPill>().PowerGain;
             Destroy(other.gameObject);
         }
     }
